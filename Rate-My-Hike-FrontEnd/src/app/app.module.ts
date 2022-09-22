@@ -3,14 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AccountComponent } from './account/account.component';
+import { Router, RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {path:'account', component:AccountComponent}
+]
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
