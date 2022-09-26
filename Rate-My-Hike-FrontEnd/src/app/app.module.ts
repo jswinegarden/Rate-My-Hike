@@ -11,6 +11,8 @@ import { ResourcesComponent } from './resources/resources.component';
 
 import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RegisterComponent } from './register/register.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     AccountComponent,
     ResourcesComponent,
     HomepageComponent,
-    NavbarComponent
+    NavbarComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
