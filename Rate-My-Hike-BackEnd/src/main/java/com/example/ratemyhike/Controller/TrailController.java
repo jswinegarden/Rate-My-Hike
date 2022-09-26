@@ -35,6 +35,6 @@ public class TrailController {
 
     @DeleteMapping("/deletetrail/{trailId}")
     public ResponseEntity<?> deleteTrailByIdHandler(@PathVariable("trailId") int id) {
-        return trailService.getTrailById(id);
+        return trailService.deleteTrailById(id);
     }
 }
