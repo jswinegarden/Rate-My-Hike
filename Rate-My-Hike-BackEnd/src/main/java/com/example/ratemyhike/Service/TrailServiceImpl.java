@@ -40,7 +40,7 @@ public class TrailServiceImpl implements TrailService {
     public ResponseEntity<?> getTrailById(int id) {
         Optional<Trail> optional = trailRepo.findById(id);
         if (optional.isPresent()) {
-            ResponseEntity<?> response =  ResponseEntity.ok(optional.get());
+          return ResponseEntity.ok(optional.get());
         }
         return ResponseEntity.ok("No Trail Available with that ID");
     }
