@@ -8,10 +8,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
 
 import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegisterComponent } from './register/register.component';
+
+const routes: Routes = [
+
+  {path: 'login', component:LoginComponent},
+  {path: 'home', component:HomepageComponent},
+  {path: 'register', component:RegisterComponent},
+  {path: 'account', component:AccountComponent},
+  {path: 'resources', component:ResourcesComponent}
+]
 
 @NgModule({
   declarations: [
@@ -26,8 +41,14 @@ import { RegisterComponent } from './register/register.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot(routes),
     BrowserAnimationsModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
