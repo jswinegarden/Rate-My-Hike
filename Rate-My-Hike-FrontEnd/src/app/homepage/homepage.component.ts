@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { Loader } from '@googlemaps/js-api-loader';
-// import { ElementRef } from '@angular/core';
-// import { ap } from '@angular/google-maps';
+
 
 @Component({
   selector: 'app-homepage',
