@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 
 import { HomepageComponent } from './homepage/homepage.component';
+import { UpdateRemoveAddTrailComponent } from './update-remove-add-trail/update-remove-add-trail.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegisterComponent } from './register/register.component';
 
@@ -36,7 +37,8 @@ const routes: Routes = [
     ResourcesComponent,
     HomepageComponent,
     NavbarComponent,
-    RegisterComponent
+    RegisterComponent,
+    UpdateRemoveAddTrailComponent
   ],
   imports: [
     BrowserModule,
