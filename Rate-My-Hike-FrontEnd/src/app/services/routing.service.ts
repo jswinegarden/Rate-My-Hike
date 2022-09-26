@@ -18,9 +18,11 @@ export class RoutingService {
     goToAccount(){
         this.router.navigate(['account'])
     }
-
     goToResources(){
         this.router.navigate(['resources'])
+    }
+    goToRegister(){
+        this.router.navigate(['register'])
     }
 
 }
