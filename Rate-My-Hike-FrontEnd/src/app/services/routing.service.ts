@@ -13,7 +13,7 @@ export class RoutingService {
         this.router.navigate(['login'])
     }
     goToHome(){
-        this.router.navigate(['homepage'])
+        this.router.navigate(['home'])
     }
     goToAccount(){
         this.router.navigate(['account'])
