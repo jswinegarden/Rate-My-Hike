@@ -22,11 +22,11 @@ import { RegisterComponent } from './register/register.component';
 const routes: Routes = [
 
   {path: 'login', component:LoginComponent},
-  {path: 'home', component:HomepageComponent},
+  {path: 'homepage', component:HomepageComponent},
   {path: 'register', component:RegisterComponent},
   {path: 'account', component:AccountComponent},
   {path: 'resources', component:ResourcesComponent},
-  {path: '', component:HomepageComponent}
+  // {path: '', component:HomepageComponent}
 ]
 
 @NgModule({
@@ -50,7 +50,7 @@ const routes: Routes = [
     FormsModule,
     MatInputModule,
     HttpClientModule
-  
+
   ],
   providers: [],
   bootstrap: [AppComponent]
