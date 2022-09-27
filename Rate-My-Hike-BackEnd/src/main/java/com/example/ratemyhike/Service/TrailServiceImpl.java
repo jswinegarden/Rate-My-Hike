@@ -55,7 +55,8 @@ public class TrailServiceImpl implements TrailService {
             trail1.setMiles(trail.getMiles());
             trail1.setElevation(trail.getElevation());
             trail1.setRating(trail.getRating());
-            trail1.setLevel(trail.getLevel());
+            trail1.setDifficulty(trail.getDifficulty());
+//            trail1.setLevel(trail.getLevel());
             trail1.setPhoto(trail.getPhoto());
             trail.setDescription(trail.getDescription());
             return ResponseEntity.ok(trailRepo.save(trail1));
