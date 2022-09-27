@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccountComponent } from './account/account.component';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ResourcesComponent } from './resources/resources.component';
@@ -26,7 +25,8 @@ const routes: Routes = [
   {path: 'home', component:HomepageComponent},
   {path: 'register', component:RegisterComponent},
   {path: 'account', component:AccountComponent},
-  {path: 'resources', component:ResourcesComponent}
+  {path: 'resources', component:ResourcesComponent},
+  {path: '', component:HomepageComponent}
 ]
 
 @NgModule({
@@ -42,7 +42,6 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
     GoogleMapsModule,
@@ -50,6 +49,7 @@ const routes: Routes = [
     MatFormFieldModule,
     FormsModule,
     MatInputModule,
+    HttpClientModule
   
   ],
   providers: [],
