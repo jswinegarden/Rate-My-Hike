@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Loader} from "@googlemaps/js-api-loader";
 
 
 @Component({
@@ -8,20 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  // map:Map = new Map();
-  // errorMessage = "";
-
-  
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    let loader = new Loader({
+      apiKey: 'AIzaSyAGtq9SspbirAym3DYUeCIoP6oGcl6P8yw',
+    })
+
+    loader.load().then(() => {
+      new google.maps.Map(<HTMLElement>document.getElementById("map"), {
+        center: {lat: 31.136906, lng: -97.433624},
+        zoom: 15,
+
+      })
+    })
   }
- 
-  
-  // const center: google.maps.LatLngLiteral = {lat: 30, lng: -110};
-  
-  // function initMap(): void {
-  //   Map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
-  //     center,
-  //     zoom: 8
-  //   });
   }

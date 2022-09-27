@@ -1,0 +1,27 @@
+<h2 style="text-align: center;">Create a new account</h2>
+
+<form class="register-form">
+
+<form class="example-form">
+    <mat-form-field id="username" class="example-full-width" appearance="outline">
+      <mat-label>Username</mat-label>
+      <input type="text" matInput placeholder="Enter your username" [(ngModel)]="user.username"  name="username">
+    </mat-form-field>
+</form>
+<form class="example-form">
+  <mat-form-field id="password" class="example-full-width" appearance="outline">
+    <mat-label>Password</mat-label>
+    <input type="password" matInput placeholder="Enter your password" [(ngModel)]="user.password"  name="password">
+  </mat-form-field>
+</form>
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="outline" style="margin-right: 10px;">
+    <mat-label>Email Address</mat-label>
+    <input type="text" matInput placeholder="Enter your email address" [(ngModel)]="user.emailAddress"  name="email">
+  </mat-form-field>
+
+</form>
+    <button id="signupbutton" mat-raised-button color="warn" (click)="addUser()" (click)="gotoLogin()">Sign up</button>
+
+<h2 class="question">Do you already have an account?</h2>
+<button mat-raised-button color="warn" (click)="gotoLogin()">Login</button>

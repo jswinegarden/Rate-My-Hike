@@ -18,6 +18,10 @@ export class AppComponent {
     this.router.navigate(['account']);
   }
   clickResources(){
-    this.router.navigate(['resources'])
+    this.router.navigate(['resources']);
+  }
+
+  clickTrails(){
+    this.router.navigate(['trails']);
   }
 }

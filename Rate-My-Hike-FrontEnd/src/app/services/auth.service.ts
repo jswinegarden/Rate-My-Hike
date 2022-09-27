@@ -13,12 +13,12 @@ export class AuthService {
     authenticateUser(user:User):Observable<any>{
         console.log(user)
         console.log(user.username, user.password + "sdsd")
-        return this.httpClient.post<any>('http://localhost:9000/gateway/users/login', user); //placeholder url until I grab backend url
+        return this.httpClient.post<any>('http://localhost:9001/api/v1/users/login', user); 
 
     }
 
     isValid(token:any):Observable<any>{
-        return this.httpClient.post<any>('http://localhost:9000/gateway/users/isAuthenticated',{},{ //placeholder url until I grab backend url
+        return this.httpClient.post<any>('http://localhost:9001/api/v1/users/isAuthenticated',{},{ 
             headers:new HttpHeaders().set("Authorization", "Bearer " + token)
         })
     }

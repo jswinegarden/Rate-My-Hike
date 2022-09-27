@@ -24,9 +24,9 @@ public class Trail {
 
     private int rating;
 
-    private String level;
-
     private String photo;
 
     private String description;
+
+    private Difficulty difficulty;
 }
