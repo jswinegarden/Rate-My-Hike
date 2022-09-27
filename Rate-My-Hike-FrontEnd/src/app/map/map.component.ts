@@ -8,29 +8,22 @@ import { Loader } from '@googlemaps/js-api-loader';
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
-  
    
 
-    ngOnInit(): void {
-      let loader = new Loader({
-        apiKey: 'AIzaSyAGtq9SspbirAym3DYUeCIoP6oGcl6P8yw'
+  title = 'Rate-My-Hike';
+  
+
+  ngOnInit(): void {
+    let loader = new Loader({
+      apiKey: 'AIzaSyC1prN1bEET8WlNMVP-_r05U9ABMG2mPSQ',
+    })
+
+    loader.load().then(() => {
+      new google.maps.Map(<HTMLElement>document.getElementById("map"), {
+        center: {lat: 31.136906, lng: -97.433624},
+        zoom: 15,
+
       })
-  
-      loader.load().then(() => {
-        console.log('loaded gmaps')
-  
-        const location = { lat: 51.233334, lng: 	6.783333 }
-        
-        this.map = new google.maps.Map(<HTMLElement>document.getElementById("map"), {
-          center: location,
-          zoom: 6,
-          
-        })
-  
-        const marker = new google.maps.Marker({
-          position: location,
-          map: this.map,
-        });
-      })
-    }
+    })
   }
+}
