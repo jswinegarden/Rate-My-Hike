@@ -11,7 +11,7 @@ export class HomepageComponent implements OnInit {
 
   ngOnInit(): void {
     let loader = new Loader({
-      apiKey: 'AIzaSyC1prN1bEET8WlNMVP-_r05U9ABMG2mPSQ',
+      apiKey: 'AIzaSyAGtq9SspbirAym3DYUeCIoP6oGcl6P8yw',
     })
 
     loader.load().then(() => {
