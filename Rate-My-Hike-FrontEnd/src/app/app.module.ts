@@ -18,6 +18,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { UpdateRemoveAddTrailComponent } from './update-remove-add-trail/update-remove-add-trail.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegisterComponent } from './register/register.component';
+import {MatButtonModule} from "@angular/material/button";
+import {MatCardModule} from "@angular/material/card";
 
 const routes: Routes = [
 
@@ -49,7 +51,9 @@ const routes: Routes = [
     MatFormFieldModule,
     FormsModule,
     MatInputModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    MatCardModule
 
   ],
   providers: [],
