@@ -28,10 +28,11 @@ import { WishlistComponent } from './wishlist/wishlist.component';
 import { TrailsViewComponent } from './trails-view/trails-view.component';
 import { UpdateTrailComponent } from './update-trail/update-trail.component';
 
+
 const routes: Routes = [
 
   {path: 'login', component:LoginComponent},
-  {path: 'home', component:HomepageComponent},
+  {path: 'homepage', component:HomepageComponent},
   {path: 'register', component:RegisterComponent},
   {path: 'account', component:AccountComponent},
   {path: 'resources', component:ResourcesComponent},
