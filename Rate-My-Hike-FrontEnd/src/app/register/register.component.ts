@@ -3,6 +3,7 @@ import { User } from '../model/user';
 import { RoutingService } from '../services/routing.service';
 import { RegisterService } from '../services/register.service';
 import { UserService } from '../services/user.service';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-register',

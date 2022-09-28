@@ -13,8 +13,8 @@ export class AuthService {
     authenticateUser(user:User):Observable<any>{
         console.log(user)
         console.log(user.username, user.password + "sdsd")
+        console.log(user.id);
         return this.httpClient.post<any>('http://localhost:9001/api/v1/users/login', user); 
-
     }
 
     isValid(token:any):Observable<any>{
@@ -32,9 +32,17 @@ getToken(){
 }
 
 setUserId(id:number){
-    return sessionStorage.setItem("userId", id+"")
-}
-getUserId(){
-    return localStorage.getItem('userId');
-}
+    return sessionStorage.setItem("userid", id+"")
+   }
+  getUserId(){
+    return localStorage.getItem('userid');
+  }
+
+  getUserName(){
+    return localStorage.getItem('username');
+  }
+  
+  setUserName(username:string) {
+    return localStorage.setItem('username', username);
+  }
 }
