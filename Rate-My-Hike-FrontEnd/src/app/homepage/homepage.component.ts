@@ -31,13 +31,13 @@ export class HomepageComponent implements OnInit {
 
   constructor(private readonly geolocation$: GeolocationService) {}
 
-  getPosition() {
+  /*getPosition() {
     function doSomethingWithPosition(position: GeolocationPosition) {
 
     }
 
     this.geolocation$.subscribe(position =>
       doSomethingWithPosition(position));
-  }
+  }*/
 
   }
