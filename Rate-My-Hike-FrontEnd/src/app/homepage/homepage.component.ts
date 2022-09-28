@@ -1,6 +1,11 @@
 
-import {Component, OnInit} from '@angular/core';
-import {Loader} from "@googlemaps/js-api-loader";
+import {Component,OnInit/*
+ViewChild*/} from '@angular/core';
+ import {Loader} from "@googlemaps/js-api-loader";
+// import { HttpClient } from '@angular/common/http';
+// import { Observable, of } from 'rxjs';
+// import { catchError, map } from 'rxjs/operators';
+// import { MapInfoWindow, MapMarker } from '@angular/google-maps';
 
 @Component({
   selector: 'app-homepage',
@@ -13,6 +18,8 @@ export class HomepageComponent implements OnInit {
     let loader = new Loader({
       apiKey: 'AIzaSyAGtq9SspbirAym3DYUeCIoP6oGcl6P8yw',
     })
+
+
 
     loader.load().then(() => {
       new google.maps.Map(<HTMLElement>document.getElementById("map"), {
