@@ -13,10 +13,7 @@ export class AppComponent{
 
 
 
-  constructor(private router: Router, private locator: LocatorService) {
-    this.locator.getUserLocation().subscribe(data => {
-      console.log(data);
-    })
+  constructor(private router: Router) {
   }
 
   clickAccount(){
