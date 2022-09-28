@@ -52,18 +52,17 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User addNewUser(User user) throws UserWithIDAlreadyExistsException {
-
+    public User addNewUser(User user){// throws UserWithIDAlreadyExistsException {
+//        String userName = userRepo.findUserByUsername(user.getUsername()).getUsername();
         Optional<User> optional = userRepo.findById(user.getId());
-
         if (optional.isEmpty()) {
             userRepo.save(user);
-            return user;
-        } else {
+        }
+        else{
             user.setId(user.getId()+1);
             addNewUser(user);
         }
-        throw new UserWithIDAlreadyExistsException();
+        return user;
     }
 
     @Override
