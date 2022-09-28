@@ -3,6 +3,7 @@ package com.example.ratemyhike.Controller;
 import com.example.ratemyhike.Exceptions.CredentialsInvalidException;
 import com.example.ratemyhike.Exceptions.UserWithIDAlreadyExistsException;
 import com.example.ratemyhike.Exceptions.UserWithIdNotFoundException;
+import com.example.ratemyhike.Exceptions.UserWithUsernameNotFoundException;
 import com.example.ratemyhike.Model.LoginUser;
 import com.example.ratemyhike.Model.User;
 import com.example.ratemyhike.Service.UserService;
@@ -65,6 +66,22 @@ public class UserController {
 
     }
 
+    @GetMapping("/usernames/{username}")
+    public ResponseEntity<?> getUserByUsernameHandler(@PathVariable("username") String username) {
+
+        ResponseEntity<?> responseEntity;
+
+        try {
+            User user = userService.getUserByName(username);
+            responseEntity = new ResponseEntity<>(user, HttpStatus.OK);
+        } catch (UserWithUsernameNotFoundException e) {
+            responseEntity = new ResponseEntity<>("User with name not found", HttpStatus.NOT_FOUND);
+        }
+
+        return responseEntity;
+
+    }
+
 
     @PostMapping("/users/login")
     public ResponseEntity<?> loginHandler(@RequestBody LoginUser loginUser) {
@@ -75,7 +92,6 @@ public class UserController {
         try {
 
             User user = userService.verifyUser(loginUser.getUsername(), loginUser.getPassword());
-            //
             String token = userService.generateToken(user);
             tokenMap.put("token", token);
             responseEntity = new ResponseEntity<>(tokenMap, HttpStatus.OK);
