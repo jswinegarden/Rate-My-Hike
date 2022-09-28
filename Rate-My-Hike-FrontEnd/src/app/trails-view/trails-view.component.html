@@ -1,0 +1,27 @@
+<div class="card-container">
+    <div *ngFor="let trail of trails">
+  
+    <mat-card class="trailcard" id="trailcard">
+        <mat-card-header class="headercontainer">
+          <mat-card-title class="headertitle">{{trail.trailName}}</mat-card-title>
+          <mat-card-subtitle>Difficulty: {{trail.difficulty}}</mat-card-subtitle>
+          <div class="subtitles">
+          <mat-card-subtitle>{{trail.rating}}</mat-card-subtitle>
+        </div>
+        </mat-card-header>
+        <mat-card-content>
+          <img  class="headertitle" src="{{trail.photo}}" alt="{{trail.trailName}}" style="width:18rem">
+          <p>{{trail.description}}</p>
+          <p>Length: {{trail.miles}} miles</p>
+          <p>Elevation: {{trail.elevation}}</p>
+  
+      </mat-card-content>
+      <mat-card-actions class="actionsclass">
+        <p>Add to Wishlist</p>
+        <button mat-icon-button class="favorite-icon">
+            <mat-icon>favorite</mat-icon>
+          </button>
+      </mat-card-actions>
+      </mat-card>
+    </div>
+    </div>

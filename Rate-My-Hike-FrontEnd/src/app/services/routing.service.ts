@@ -25,4 +25,8 @@ export class RoutingService {
         this.router.navigate(['register'])
     }
 
+    goToTrails(){
+        this.router.navigate(['trails'])
+    }
+
 }

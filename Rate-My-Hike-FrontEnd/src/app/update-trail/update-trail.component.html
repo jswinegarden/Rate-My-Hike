@@ -1,0 +1,47 @@
+<div class = "form-container">
+    <h3>Update Trail</h3>
+    <p>{{this.errorMessage}}</p>
+    <div class = "form-container">
+
+
+        <div class="firstsection">
+
+          <mat-form-field class="example-full-width" appearance="outline">
+              <mat-label>Reference Number</mat-label>
+              <input matInput placeholder="Enter trail ID" [(ngModel)]="trail.id">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+              <mat-label>Trail Name</mat-label>
+              <input matInput placeholder="Enter trail name"  value="new Book"[(ngModel)]="trail.trailName" >
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Miles</mat-label>
+            <input matInput placeholder="Enter miles" [(ngModel)]="trail.miles">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Description</mat-label>
+          <input matInput placeholder="Enter trail description" [(ngModel)]="trail.description">
+      </mat-form-field>
+      </div>
+      <div class="secondsection">
+          <mat-form-field class="example-full-width" appearance="outline">
+              <mat-label>Elevation</mat-label>
+              <input matInput placeholder="Enter elevation" [(ngModel)]="trail.elevation">
+          </mat-form-field>
+           <mat-form-field class="example-full-width" appearance="outline">
+              <mat-label>Rating</mat-label>
+              <input matInput placeholder="Enter trail rating" [(ngModel)]="trail.rating">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Difficulty</mat-label>
+            <input matInput placeholder="Enter difficulty" [(ngModel)]="trail.difficulty">
+        </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Image Link</mat-label>
+            <input matInput placeholder="Upload image link" [(ngModel)]="trail.photo">
+        </mat-form-field>
+      </div>
+
+    <button mat-raised-button color="warn" (click)="edit(trail)">Update trail</button>
+      </div>
+</div>

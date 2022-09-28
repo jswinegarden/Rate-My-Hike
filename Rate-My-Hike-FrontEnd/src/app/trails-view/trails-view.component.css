@@ -1,0 +1,20 @@
+.card-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    filter: drop-shadow(10px 10px 10px #e2e9ff);
+}
+
+.actionsclass {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+img {
+    height: 350px;
+    width: 100px;
+    margin-bottom: 10px;
+}
