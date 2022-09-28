@@ -27,6 +27,7 @@ import { HeaderComponent } from './header/header.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { TrailsViewComponent } from './trails-view/trails-view.component';
 import { UpdateTrailComponent } from './update-trail/update-trail.component';
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
 
 
 const routes: Routes = [
@@ -71,7 +72,8 @@ const routes: Routes = [
     MatButtonModule,
     MatMenuModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
