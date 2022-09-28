@@ -1,4 +1,4 @@
-package com.example.ratemyhike.Model;
+package com.example.ratemyhike.Model.Google;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
