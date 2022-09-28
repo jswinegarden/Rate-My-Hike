@@ -60,8 +60,10 @@ public class UserServiceImpl implements UserService {
             userRepo.save(user);
             return user;
         } else {
-            throw new UserWithIDAlreadyExistsException();
+            user.setId(user.getId()+1);
+            addNewUser(user);
         }
+        throw new UserWithIDAlreadyExistsException();
     }
 
     @Override

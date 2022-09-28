@@ -7,4 +7,5 @@ export class Trails {
     difficulty!: string;
     photo!: string;
     description!: string;
+    events!: any;
 }

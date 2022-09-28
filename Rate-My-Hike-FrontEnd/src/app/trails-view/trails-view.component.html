@@ -1,6 +1,6 @@
 <div class="card-container">
     <div *ngFor="let trail of trails">
-  
+
     <mat-card class="trailcard" id="trailcard">
         <mat-card-header class="headercontainer">
           <mat-card-title class="headertitle">{{trail.trailName}}</mat-card-title>
@@ -14,7 +14,8 @@
           <p>{{trail.description}}</p>
           <p>Length: {{trail.miles}} miles</p>
           <p>Elevation: {{trail.elevation}}</p>
-  
+          <p>Events: {{trail.events}}</p>
+
       </mat-card-content>
       <mat-card-actions class="actionsclass">
         <p>Add to Wishlist</p>
