@@ -14,7 +14,7 @@ export class TrailService {
 token:any=this.authService.getToken();
 
   getAllTrails(){
-    return this.httpClient.get<Trails[]>("http://localhost:9000/trails")
+    return this.httpClient.get<Trails[]>("http://localhost:9001/trail/trails")
     
     // , {
     //   headers: new HttpHeaders().set('Authorization', `Bearer ${this.token}`)
@@ -22,7 +22,7 @@ token:any=this.authService.getToken();
   }
 
   addNewTrail(trail : Trails){
-    return this.httpClient.post<Trails>("http://localhost:9000/trails", trail
+    return this.httpClient.post<Trails>("http://localhost:9001/trail/addtrail", trail
     // , {
     //   headers: new HttpHeaders().set('Authorization', `Bearer ${this.token}`)
     // }
@@ -30,7 +30,7 @@ token:any=this.authService.getToken();
   }
 
   updateTrail(trail:Trails) {
-    return this.httpClient.put<Trails>("http://localhost:9000/trails/" + trail.id, trail
+    return this.httpClient.put<Trails>("http://localhost:9001/trail/edittrail/" + trail.id, trail
     // , {
     //   headers: new HttpHeaders().set('Authorization', `Bearer ${this.token}`)
     // }
@@ -38,7 +38,7 @@ token:any=this.authService.getToken();
   }
 
   deleteTrail(id:number): Observable<any>{
-    return this.httpClient.delete("http://localhost:9000/trails/" + id
+    return this.httpClient.delete("http://localhost:9001/trail/deletetrail/" + id
     // , {
     //   headers: new HttpHeaders().set('Authorization', `Bearer ${this.token}`)
     // }
@@ -46,6 +46,6 @@ token:any=this.authService.getToken();
   }
 
   getTrailById(trail:Trails){
-    return this.httpClient.get<Trails>("http://localhost:9000/trails/" + trail.id)
+    return this.httpClient.get<Trails>("http://localhost:9001/trails/" + trail.id)
   }
 }

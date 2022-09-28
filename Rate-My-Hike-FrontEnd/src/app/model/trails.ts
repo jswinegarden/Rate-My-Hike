@@ -4,7 +4,8 @@ export class Trails {
     miles!: number;
     elevation!: number;
     rating!: number;
-    level!: string;
+    difficulty!: string;
     photo!: string;
     description!: string;
+    events!: any;
 }
