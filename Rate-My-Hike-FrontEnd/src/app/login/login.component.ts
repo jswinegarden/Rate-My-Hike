@@ -32,4 +32,8 @@ export class LoginComponent implements OnInit {
     })
   }
 
+  goToRegister(){
+    this.routingService.goToRegister();
+  }
+
 }
