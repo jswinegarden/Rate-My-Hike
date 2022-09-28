@@ -1,9 +1,6 @@
-
-import { Component,OnInit } from '@angular/core';
- import {Loader} from "@googlemaps/js-api-loader";
-import { HttpClient } from '@angular/common/http';
-import {GeolocationService} from "@ng-web-apis/geolocation";
-
+import {Component, OnInit} from '@angular/core';
+import {Loader} from "@googlemaps/js-api-loader";
+import {HttpClient} from '@angular/common/http';
 
 
 @Component({
@@ -27,17 +24,14 @@ export class HomepageComponent implements OnInit {
 
       })
     })
-  }
 
-  constructor(private readonly geolocation$: GeolocationService) {}
-
-  getPosition() {
-    function doSomethingWithPosition(position: GeolocationPosition) {
-
-    }
-
-    this.geolocation$.subscribe(position =>
-      doSomethingWithPosition(position));
-  }
 
   }
+
+  constructor(private http: HttpClient) {
+  }
+
+
+
+
+}

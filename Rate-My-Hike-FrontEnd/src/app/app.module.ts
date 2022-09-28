@@ -18,7 +18,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatCardModule} from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import {HttpClient} from "@angular/common/http";
 import { HomepageComponent } from './homepage/homepage.component';
 import { UpdateRemoveAddTrailComponent } from './update-remove-add-trail/update-remove-add-trail.component';
 import { NavbarComponent } from './navbar/navbar.component';
