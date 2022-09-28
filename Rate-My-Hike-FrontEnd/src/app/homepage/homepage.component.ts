@@ -21,11 +21,8 @@ export class HomepageComponent implements OnInit {
       new google.maps.Map(<HTMLElement>document.getElementById("map"), {
         center: {lat: 31.136906, lng: -97.433624},
         zoom: 15,
-
       })
     })
-
-
   }
 
   constructor(private http: HttpClient) {
@@ -33,5 +30,9 @@ export class HomepageComponent implements OnInit {
 
 
 
-
+  /*getPosition() {
+    function doSomethingWithPosition(position: GeolocationPosition) {
+    this.geolocation$.subscribe(position =>
+      doSomethingWithPosition(position));
+  }*/
 }
