@@ -37,4 +37,6 @@ public class TrailController {
     public ResponseEntity<?> deleteTrailByIdHandler(@PathVariable("trailId") int id) {
         return trailService.deleteTrailById(id);
     }
+
+
 }
