@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router, RouterConfigOptions } from '@angular/router';
 import { RoutingService } from './services/routing.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,7 +10,7 @@ import { RoutingService } from './services/routing.service';
 })
 export class AppComponent{
   title = 'Rate-My-Hike';
-  
+
 
 
   constructor(private router: Router){}
@@ -25,4 +26,5 @@ export class AppComponent{
   clickTrails(){
     this.router.navigate(['trails']);
   }
+
 }
