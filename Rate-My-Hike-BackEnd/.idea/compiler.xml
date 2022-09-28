@@ -10,9 +10,6 @@
         <module name="ratemyhike" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ratemyhike" target="11" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
