@@ -1,11 +1,8 @@
 
-import {Component,OnInit/*
-ViewChild*/} from '@angular/core';
+import { Component,OnInit } from '@angular/core';
  import {Loader} from "@googlemaps/js-api-loader";
-// import { HttpClient } from '@angular/common/http';
-// import { Observable, of } from 'rxjs';
-// import { catchError, map } from 'rxjs/operators';
-// import { MapInfoWindow, MapMarker } from '@angular/google-maps';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-homepage',
