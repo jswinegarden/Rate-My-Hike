@@ -38,4 +38,8 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['trailsUpdate']);
   }
 
+  clickHomepage(){
+    this.router.navigate(['homepage']);
+  }
+
 }
