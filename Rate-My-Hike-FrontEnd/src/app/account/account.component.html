@@ -1,1 +1,33 @@
-<p> account works!</p>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <a href="#"><i class="fas fa-arrow-left" id="button-back"></i></a>
+    <div class="profile-body">
+        <div class="photo">
+            <img src="https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg"
+                class="image--cover">
+        </div>
+        <div class="profile">
+
+            <h1 class="username">Username: {{user.username}}</h1>
+            <h2 class="profession">Email Address: {{user.email}}</h2>
+            <h3 class="locationname"><i class="fas fa-map-marker-alt"></i> Paris, France </h3>
+            <p class="descricao">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que
+                pode alegrar sua vidis. Quem manda na minha terra sou euzis! Nullam volutpat risus nec leo commodo, ut
+                interdum diam laoreet. Sed non consequat odio. Suco
+                de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+
+            <div class="socialmedia">
+                <a href="#" class="button-facebook"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" class="button-instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="button-twitter"><i class="fab fa-twitter-square"></i></a>
+                <a href="#" class="button-whatsapp"><i class="fab fa-whatsapp-square"></i></a>
+            </div>
+        </div>
+
+        <app-wishlist></app-wishlist>
