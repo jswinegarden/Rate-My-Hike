@@ -28,6 +28,7 @@ import { WishlistComponent } from './wishlist/wishlist.component';
 import { TrailsViewComponent } from './trails-view/trails-view.component';
 import { UpdateTrailComponent } from './update-trail/update-trail.component';
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import { TrailDetailsComponent } from './trail-details/trail-details.component';
 
 
 const routes: Routes = [
@@ -56,7 +57,8 @@ const routes: Routes = [
     HeaderComponent,
     WishlistComponent,
     TrailsViewComponent,
-    UpdateTrailComponent
+    UpdateTrailComponent,
+    TrailDetailsComponent
   ],
   imports: [
     BrowserModule,

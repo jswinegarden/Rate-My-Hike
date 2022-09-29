@@ -1,10 +1,7 @@
-<button mat-icon-button style="color: rgb(35, 67, 45)">
-    <mat-icon>add</mat-icon>
-  </button>
-
+<div class="background">
+  <div class="form-background">
+ <div class="container">
   <div class = "form-container">
-    <p>{{this.errorMessage}}</p>
-    <div class = "form-container">
 
 
         <div class="firstsection">
@@ -45,8 +42,10 @@
         </mat-form-field>
       </div>
 
-    <button mat-raised-button color="warn" (click)="addTrail()">Add trail</button>
+    
       </div>
+      <button mat-raised-button color="warn" (click)="addTrail()">Add trail</button>
+</div>
 </div>
 
 <div class="card-container">
@@ -62,28 +61,19 @@
         </div>
         </mat-card-header>
         <mat-card-content>
-          <img  class="headertitle" src="{{trail.photo}}" alt="{{trail.trailName}}" style="width:18rem">
-          <p>{{trail.description}}</p>
+          <img  class="headertitle" src="{{trail.photo}}" alt="{{trail.trailName}}">
           <p>Length: {{trail.miles}} miles</p>
           <p>Elevation: {{trail.elevation}}</p>
   
       </mat-card-content>
       <mat-card-actions class="actionsclass">
-        <p>Delete</p>
-        <button mat-icon-button style="background-color: rgb(255, 67, 67) !important" (click)="deleteTrail(trail.id)">
-            <mat-icon>delete</mat-icon>
-          </button>
-          <button mat-raised-button color="warn" (click)="updateTrail(trail)">Update</button>
-      </mat-card-actions>
+          <button mat-raised-button style="margin-right: 9px; " color="warn" (click)="updateTrail(trail)">Update</button>
+          <button mat-icon-button style="color: white; background-color: rgb(255, 67, 67) !important; border-radius: 20px !important" (click)="deleteTrail(trail.id)">
+              <mat-icon>delete</mat-icon>
+            </button>
+        </mat-card-actions>
       </mat-card>
     </div>
     </div>
 
-    <!-- id!: number;
-        trailName!: string;
-        miles!: number;
-        elevation!: number;
-        rating!: number;
-        level!: string;
-        photo!: string;
-        description!: string; -->
+</div>
