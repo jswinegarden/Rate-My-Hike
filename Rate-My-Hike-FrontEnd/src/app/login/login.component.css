@@ -1,13 +1,10 @@
-body {
-
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Quicksand:wght@600&display=swap');
 .login-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  margin-top: -50px;
 }
 .mat-form-field{
 
@@ -92,10 +89,27 @@ body {
   width: 100%;
   display: block;
   font-weight: 700;
+  
 }
 .login-wrapper mat-card-header mat-card-title {
   font-size: 30px;
   margin: 0;
+  font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
+}
+
+.btn-block{
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
+}
+
+.other-btn{
+  width: 50%;
+  margin-left: 82px;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
 }
 .login-wrapper .mat-card {
   padding: 40px 70px 50px;
@@ -103,8 +117,15 @@ body {
 .login-wrapper .mat-stroked-button {
   border: 1px solid currentColor;
   line-height: 54px;
-  background: #FFF7FA;
+  background: #c3e3c4;
 }
 .login-wrapper .mat-form-field-appearance-legacy .mat-form-field-infix {
   padding: 0.8375em 0;
+}
+
+.noAccount {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 40px;
 }

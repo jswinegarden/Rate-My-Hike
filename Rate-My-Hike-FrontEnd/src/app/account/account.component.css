@@ -1,8 +1,8 @@
 
 body{
-
+    margin-top: 40px;
     background-image: URL("https://png.pngtree.com/thumb_back/fw800/background/20191115/pngtree-repeating-trees-background-image_322389.jpg");
-
+    min-height: 80vh;
 }
 
 .profile-body{

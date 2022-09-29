@@ -7,13 +7,16 @@
           <mat-card-title class="headertitle">{{trail.trailName}}</mat-card-title>
           <mat-card-subtitle>{{trail.difficulty}}</mat-card-subtitle>
           <div class="subtitles">
-          <mat-card-subtitle>{{trail.rating}}</mat-card-subtitle>
+          <mat-card-subtitle>Rating: {{trail.rating}}/10</mat-card-subtitle>
         </div>
         </mat-card-header>
         <mat-card-content>
           <img  class="headertitle" src="{{trail.photo}}" alt="{{trail.trailName}}">
+          <p class="description">{{trail.description}}</p>
+          <div class="lengthElevation">
           <p>Length: {{trail.miles}} mi</p>
           <p>Elevation gain: {{trail.elevation}} ft</p>
+          </div>
           <p>Events: {{trail.events}}</p>
 
       </mat-card-content>

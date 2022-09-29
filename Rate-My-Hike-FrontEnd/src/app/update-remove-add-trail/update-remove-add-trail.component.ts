@@ -4,6 +4,7 @@ import { RoutingService } from '../services/routing.service';
 import { TrailService } from '../services/trail.service';
 import {MatDialog} from '@angular/material/dialog';
 import { UpdateTrailComponent } from '../update-trail/update-trail.component';
+import { ConfirmDeleteComponent } from '../confirm-delete/confirm-delete.component';
 
 @Component({
   selector: 'app-update-remove-add-trail',
@@ -57,12 +58,20 @@ export class UpdateRemoveAddTrailComponent implements OnInit {
     window.location.reload();
   }
 
-  deleteTrail(id:number){
-    this.trailService.deleteTrail(id).subscribe({
-      error:(message)=>{
-        this.trails = this.trails.filter(trail => trail.id != id);
-      }
-    })
+  // deleteTrail(id:number){
+  //   this.trailService.deleteTrail(id).subscribe({
+  //     error:(message)=>{
+  //       this.trails = this.trails.filter(trail => trail.id != id);
+  //     }
+  //   })
+  // }
+
+  deleteTrail(trail:Trails){
+    let trailCopy = Object.assign({}, trail);
+    this.dialog.open(ConfirmDeleteComponent,{
+      width: "250px",
+      data:trailCopy
+    }).afterClosed().subscribe(()=>{this.ngOnInit();})
   }
 
   updateTrail(trail:Trails){
