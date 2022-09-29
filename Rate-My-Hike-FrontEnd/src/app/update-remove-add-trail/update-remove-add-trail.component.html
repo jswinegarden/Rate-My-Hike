@@ -57,18 +57,21 @@
           <mat-card-title class="headertitle">{{trail.trailName}}</mat-card-title>
           <mat-card-subtitle>Difficulty: {{trail.difficulty}}</mat-card-subtitle>
           <div class="subtitles">
-          <mat-card-subtitle>{{trail.rating}}</mat-card-subtitle>
+          <mat-card-subtitle>Rating: {{trail.rating}}</mat-card-subtitle>
         </div>
         </mat-card-header>
         <mat-card-content>
-          <img  class="headertitle" src="{{trail.photo}}" alt="{{trail.trailName}}">
-          <p>Length: {{trail.miles}} miles</p>
-          <p>Elevation: {{trail.elevation}}</p>
+          <img  class="headertitle" src="{{trail.photo}}" alt="{{trail.trailName}}" >
+          <div class="lengthElevation">
+          <p>Length: {{trail.miles}} mi</p>
+          <p>Elevation: {{trail.elevation}} ft</p>
+        </div>
+          <p>Description: {{trail.description}}</p>
   
       </mat-card-content>
       <mat-card-actions class="actionsclass">
           <button mat-raised-button style="margin-right: 9px; " color="warn" (click)="updateTrail(trail)">Update</button>
-          <button mat-icon-button style="color: white; background-color: rgb(255, 67, 67) !important; border-radius: 20px !important" (click)="deleteTrail(trail.id)">
+          <button mat-icon-button style="color: white; background-color: rgb(255, 67, 67) !important; border-radius: 20px !important" (click)="deleteTrail(trail)">
               <mat-icon>delete</mat-icon>
             </button>
         </mat-card-actions>

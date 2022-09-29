@@ -1,3 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&family=Reem+Kufi+Fun:wght@600&family=Staatliches&display=swap');
 .example-spacer {
     flex: 1 1 auto;
+  }
+
+  .toolbar {
+    background: rgb(140,168,134);
+background: linear-gradient(90deg, rgba(140,168,134,1) 50%, rgba(94,131,78,1) 75%, rgba(68,88,60,1) 100%);
+  }
+
+  mat-icon{
+    color:rgb(52, 71, 48);
+  }
+
+  .pbuttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .titleName {
+    font-family: 'Noto Sans SC', sans-serif;
+font-family: 'Reem Kufi Fun', sans-serif;
+font-family: 'Staatliches', cursive;
+font-size: xx-large;
+  }
+
+  .loginButton {
+    border-color: rgb(188, 203, 185);
+    color:rgb(188, 203, 185);
+    padding-left: 7px;
+    padding-right: 7px;
+    border-style: solid;
+    margin-right: 20px;
+    border-radius: 5px;
+    border-width: 2px;
+    font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
+cursor: pointer;
+  }
+  .wishlistButton {
+    border-color: rgb(188, 203, 185);
+    color:rgb(188, 203, 185);
+    border-radius: 7px;
+    border-width: 2px;
+    padding-left: 7px;
+    padding-right: 5px;
+    border-style: solid;
+    margin-right: 10px;
+    font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
+cursor: pointer;
+  }
+
+  .wishlistButton:hover{
+    background-color: rgb(188, 203, 185);
+    color:rgba(68,88,60,1);
+  }
+  .loginButton:hover{
+    background-color: rgb(188, 203, 185);
+    color:rgba(68,88,60,1);
   }

@@ -1,39 +1,39 @@
-<mat-toolbar>
+<mat-toolbar class="toolbar">
     <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item (click)="clickHomepage()">
-        <mat-icon>dialpad</mat-icon>
+        <mat-icon style="color:rgb(56, 83, 51)">home</mat-icon>
         <span>Homepage</span>
       </button>
         <button mat-menu-item (click)="clickAccount()">
-          <mat-icon>dialpad</mat-icon>
+          <mat-icon style="color:rgb(56, 83, 51)">account_circle</mat-icon>
           <span>My Account</span>
         </button>
-        <button mat-menu-item (click)="clickLogin()">
-            <mat-icon>dialpad</mat-icon>
-            <span>Login</span>
-          </button>
         <!-- <button mat-menu-item (click)="clickResources()">
           <mat-icon>voicemail</mat-icon>
           <span>Resource View</span>
         </button> -->
         <button mat-menu-item (click)="clickTrails()">
-          <mat-icon>dialpad</mat-icon>
+          <mat-icon style="color:rgb(56, 83, 51)">settings_accessibility</mat-icon>
           <span>Trails</span>
         </button>
         <button mat-menu-item (click)="clickUpdateTrails()">
-            <mat-icon>dialpad</mat-icon>
+            <mat-icon style="color:rgb(56, 83, 51)">settings</mat-icon>
             <span>Update Trails</span>
           </button>
         
         
       </mat-menu>
-    <span>Hiking</span>
+    <span class="titleName"(click)="clickHomepage()" style="cursor: pointer;">Rate My Hike</span>
+    
+    <img (click)="clickHomepage()" src="https://clipground.com/images/trekking-png-8.png" width="35" height="45" style="margin-left: 9px; cursor: pointer;">
     <span class="example-spacer"></span>
-    <p (click)="clickWishlist()">Wishlist</p>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon (click)="clickWishlist()" >favorite</mat-icon>
-    </button>
+    <div class="pbuttons">
+    <p class="loginButton" (click)="clickLogin()">Sign In</p>
+    <p class="wishlistButton" (click)="clickWishlist()">Wishlist 
+      <mat-icon style="color:rgb(30, 41, 28) !important; margin-bottom: -5px;" >favorite</mat-icon>
+    </p>
+  </div>
   </mat-toolbar>

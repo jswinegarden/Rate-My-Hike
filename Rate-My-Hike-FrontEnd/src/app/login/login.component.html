@@ -1,7 +1,7 @@
 <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
 <mat-card class="box">
   <mat-card-header>
-    <mat-card-title>Log in</mat-card-title>
+    <mat-card-title>Sign In</mat-card-title>
   </mat-card-header>
 <form class="login-form">
   <p>{{errorMessage}}</p>
@@ -23,6 +23,8 @@
     </mat-form-field>
   </form>
   <button mat-stroked-button class="btn-block" id="login" mat-raised-button (click)="login()" >Login</button>
+  <p class="noAccount">Don't have an account?</p>
+  <button mat-stroked-button class="other-btn" id="login" mat-raised-button (click)="goToRegister()" >Register</button>
 </form>
 </mat-card>
 </div>

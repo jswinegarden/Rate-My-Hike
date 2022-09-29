@@ -4,7 +4,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     filter: drop-shadow(10px 10px 10px #2f4d33a3);
-    margin: 10px;
+
 }
 
 .actionsclass {
@@ -26,6 +26,12 @@
     justify-content: center;
 }
 
+.lengthElevation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -39,11 +45,13 @@
 .trailcard {
     margin: 10px;
     background-color: #f0ffebf4;
+    max-width: 400px;
 }
 
 img {
     height: 25vh;
-    width: 25vw;
+    min-width: 400px;
+    max-width: 400px;
     margin-bottom: 5px;
 }
 
