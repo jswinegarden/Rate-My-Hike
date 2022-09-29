@@ -44,9 +44,10 @@ export class HomepageComponent implements OnInit {
           title: marker.name,
         });
          marker = new google.maps.Marker({
-          position: {lat: 31.136906, lng: -97.433624},
+          position: {lat: 31.136906, lng: -97.433624},//not using the actual variable
           map: this.map,
         });
+
         marker.addListener("click", () => {
           infowindow.open({
             anchor: marker,
