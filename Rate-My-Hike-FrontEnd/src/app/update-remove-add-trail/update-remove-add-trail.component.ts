@@ -31,7 +31,8 @@ export class UpdateRemoveAddTrailComponent implements OnInit {
   }
 
   addTrail() {
-    if(this.trail.id != 0 && this.trail.trailName != "" && this.trail.miles != 0 && this.trail.difficulty != "" && this.trail.description != "") {
+    console.log("add clicked")
+    if(this.trail.id != 0 && this.trail.trailName != "" && this.trail.miles != 0 && this.trail.description != "") {
       this.trailService.addNewTrail(this.trail).subscribe({
         next:(trail) => {
           this.trails.push(trail);
@@ -44,6 +45,16 @@ export class UpdateRemoveAddTrailComponent implements OnInit {
         }
       })
     }
+    this.trail.id = 0;
+    this.trail.trailName = "";
+    this.trail.miles = 0;
+    this.trail.description = "";
+    this.trail.difficulty = "";
+    this.trail.elevation = 0;
+    this.trail.photo = "";
+    this.trail.rating = 0;
+
+    window.location.reload();
   }
 
   deleteTrail(id:number){

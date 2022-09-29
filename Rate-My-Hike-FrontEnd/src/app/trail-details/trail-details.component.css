@@ -1,0 +1,61 @@
+
+
+
+.card-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-size: 700px;
+    bottom: 0;
+    width:100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: URL("https://png.pngtree.com/thumb_back/fw800/background/20191115/pngtree-repeating-trees-background-image_322389.jpg");
+    
+}
+
+
+.trailcard {
+    max-width: 80%;
+    background-color: #e1f4dbcc !important;
+    max-height: 400px;
+    margin-top: 10px;
+}
+
+.closeButton{
+    cursor: pointer;
+    background-color: rgb(247, 97, 97) !important;
+    color:white;
+    border-radius: 50%;
+    padding: 5px;
+    padding-bottom: 0px;
+}
+
+.actionclass {
+    padding-left: 9px;
+    padding-top: 15px;
+}
+
+.headercontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyrightFoot {
+    justify-content: flex-end !important;
+    color: white;
+}
+
+.actionsclass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+}
+
+  button {
+    border-radius: 20px;
+    background-color: rgb(86, 128, 206) !important
+}

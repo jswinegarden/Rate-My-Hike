@@ -21,13 +21,14 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {HttpClient} from "@angular/common/http";
 import { HomepageComponent } from './homepage/homepage.component';
 import { UpdateRemoveAddTrailComponent } from './update-remove-add-trail/update-remove-add-trail.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 import { RegisterComponent } from './register/register.component';
 import { HeaderComponent } from './header/header.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { TrailsViewComponent } from './trails-view/trails-view.component';
 import { UpdateTrailComponent } from './update-trail/update-trail.component';
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import { TrailDetailsComponent } from './trail-details/trail-details.component';
 
 
 const routes: Routes = [
@@ -50,13 +51,14 @@ const routes: Routes = [
     AccountComponent,
     ResourcesComponent,
     HomepageComponent,
-    NavbarComponent,
+    FooterComponent,
     RegisterComponent,
     UpdateRemoveAddTrailComponent,
     HeaderComponent,
     WishlistComponent,
     TrailsViewComponent,
-    UpdateTrailComponent
+    UpdateTrailComponent,
+    TrailDetailsComponent
   ],
   imports: [
     BrowserModule,
