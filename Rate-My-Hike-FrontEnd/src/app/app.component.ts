@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router, RouterConfigOptions } from '@angular/router';
 import { RoutingService } from './services/routing.service';
+import{LocatorService} from "./locator.service";
 
 @Component({
   selector: 'app-root',
@@ -9,10 +10,11 @@ import { RoutingService } from './services/routing.service';
 })
 export class AppComponent{
   title = 'Rate-My-Hike';
-  
 
 
-  constructor(private router: Router){}
+
+  constructor(private router: Router) {
+  }
 
   clickAccount(){
     this.router.navigate(['account']);
@@ -25,4 +27,5 @@ export class AppComponent{
   clickTrails(){
     this.router.navigate(['trails']);
   }
+
 }

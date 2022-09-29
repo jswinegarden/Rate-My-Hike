@@ -25,4 +25,8 @@ export class UserService {
     });
   }
 
+  getUserByName(user:User) {
+    return this.httpClient.get<User>("http://localhost:9001/api/v1/usernames/" + user.username)
+  }
+
 }

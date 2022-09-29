@@ -3,6 +3,10 @@
       <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="clickHomepage()">
+        <mat-icon>dialpad</mat-icon>
+        <span>Homepage</span>
+      </button>
         <button mat-menu-item (click)="clickAccount()">
           <mat-icon>dialpad</mat-icon>
           <span>My Account</span>
@@ -23,6 +27,7 @@
             <mat-icon>dialpad</mat-icon>
             <span>Update Trails</span>
           </button>
+        
         
       </mat-menu>
     <span>Hiking</span>

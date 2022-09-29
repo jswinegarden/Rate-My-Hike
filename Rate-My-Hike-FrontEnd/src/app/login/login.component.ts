@@ -24,13 +24,14 @@ export class LoginComponent implements OnInit {
       next:(response)=>{
         console.log(response);
         this.authService.setToken(response['token']);
-        console.log(this.authService.getToken())
+        console.log(this.authService.getToken());
         this.user = new User();
         this.routingService.goToHome();
       },
       error:()=>{console.log('error');}
     })
   }
+
 
   goToRegister(){
     this.routingService.goToRegister();
