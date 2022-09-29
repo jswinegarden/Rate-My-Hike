@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: -50px;
+  padding: 20vh;
 }
 .mat-form-field{
 
@@ -12,6 +12,15 @@
 
 .mat-button{
 
+}
+
+.overlay {
+  background-color: rgba(110, 133, 110, 0.553);
+  min-height: 100vh;
+}
+
+.background{
+  background-image: URL("https://png.pngtree.com/thumb_back/fw800/background/20191115/pngtree-repeating-trees-background-image_322389.jpg");
 }
 body {
   height: 100%;
