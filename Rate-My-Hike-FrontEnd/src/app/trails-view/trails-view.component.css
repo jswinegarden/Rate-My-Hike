@@ -1,9 +1,14 @@
+.background{
+    background-image: URL("https://png.pngtree.com/thumb_back/fw800/background/20191115/pngtree-repeating-trees-background-image_322389.jpg");
+}
+
 .card-container{
     display:flex;
     flex-direction:row;
     justify-content: space-around;
     flex-wrap: wrap;
-    filter: drop-shadow(10px 10px 10px #e2e9ff);
+    filter: drop-shadow(10px 10px 10px #2f4d33a3);
+    cursor: pointer;
 }
 
 .actionsclass {
@@ -14,7 +19,17 @@
 }
 
 img {
-    height: 350px;
-    width: 100px;
-    margin-bottom: 10px;
+    height: 25vh;
+    width: 25vw;
+    margin-bottom: 5px;
+}
+
+.trailcard {
+    margin: 10px;
+    background-color: #e1f4dbcc;
+}
+
+.headercontainer {
+    display: flex;
+    justify-content: space-between;
 }
