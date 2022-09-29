@@ -21,7 +21,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {HttpClient} from "@angular/common/http";
 import { HomepageComponent } from './homepage/homepage.component';
 import { UpdateRemoveAddTrailComponent } from './update-remove-add-trail/update-remove-add-trail.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 import { RegisterComponent } from './register/register.component';
 import { HeaderComponent } from './header/header.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
@@ -51,7 +51,7 @@ const routes: Routes = [
     AccountComponent,
     ResourcesComponent,
     HomepageComponent,
-    NavbarComponent,
+    FooterComponent,
     RegisterComponent,
     UpdateRemoveAddTrailComponent,
     HeaderComponent,
