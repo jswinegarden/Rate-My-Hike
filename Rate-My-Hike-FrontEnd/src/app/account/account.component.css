@@ -9,6 +9,11 @@ body{
 margin: 25px;
 }
 
+.overlay {
+    background-color: rgba(110, 133, 110, 0.553);
+    min-height: 100vh;
+  }
+
 .profile {
 margin-top: -45px;
 margin-left: auto;
