@@ -23,7 +23,7 @@ export class AccountComponent implements OnInit {
 
     this.authService.isValid(token).subscribe({next:(response)=>{
       
-      let userid = response['userid'];
+      let userid = 0;
       console.log("Response: "+response['userid']);
       console.log("User ID: "+this.user.id);
       console.log("username: " + this.user.username);
